@@ -1,13 +1,10 @@
-    - O programa deverá solicitar as duas coordenadas (xB,yB) do ponto B;
+''' - O programa deverá solicitar as duas coordenadas (xB,yB) do ponto B;
 
     - Calcular a distância entre os pontos (qual fórmula usar????)
 '''
 
-
-'''
-
 # Solicitar as coordenadas do ponto A
-coordXA = float(input('Digite a coordenada X do ponto A: '))
+coordYA = float(input('Digite a coordenada X do ponto A: '))
 coordYA = float(input('Digite a coordenada Y do ponto A: '))
 
 # Solicitar as coordenadas do ponto B

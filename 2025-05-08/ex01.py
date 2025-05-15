@@ -11,8 +11,6 @@ Programa para classificar um triângulo quanto aos ângulos.
    - Acutângulo: Possui todos os ângulos internos agudos (menores que 90).
 '''
 
-Acutângulo.: Possui todos os ângulos internos agudos (menores que 90).
-
 import sys
 
 # Solicitar os 3 ângulos do triângulo
