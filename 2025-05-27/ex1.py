@@ -7,7 +7,7 @@ Como fazer a tabuada?
 import sys
 
 num = int(input('digite um numero de 1 a 10: '))
-if num > 10:
+if num <= 10:
     print('ERRO: numero invalido. Informe um numero de 1 a 10.')
 
 n1 = num * 1
