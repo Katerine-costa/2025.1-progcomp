@@ -4,11 +4,23 @@ exemplo: 5 * 7 = 7 + 7 + 7 + 7 + 7
 
 '''
 
-num1 = int(input('digite quantas vezes voce quer que eu some: '))
-num2 = int(input('digite um numero inteiro positivo: '))
-x = 1
-while x <= num1:
- num2+num2
- x+=1
+import sys
 
-print(f' soma dos algarismos é: ', num2)
+try:
+   
+   num1 = int(input('digite quantas vezes voce quer que eu some: '))
+   num2 = int(input('digite um numero inteiro positivo: '))
+except ValueError:
+   sys.exit('ERRO: digite um numero inteiro.')
+except Exception as e:
+   sys.exit(f'ERRO {e}')
+
+numero_vezes = 0
+resultado  = 0
+
+while numero_vezes < num1:
+ resultado = resultado + num2
+ print(num2, "+")
+ numero_vezes = numero_vezes + 1
+
+print('=', resultado)
