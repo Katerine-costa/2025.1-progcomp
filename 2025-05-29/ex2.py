@@ -24,7 +24,7 @@ else:
     else:
         fatorial = valor
         intAux = valor
-        while intAux <=2:
+        while intAux >=2:
             intAux -= 1
             fatorial *= intAux
 
