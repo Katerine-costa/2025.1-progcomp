@@ -19,13 +19,14 @@ else:
         print('não é fatorial')
 
     elif valor <= 2:
-        print(f'{valor}! = 1')
+        print(f'{valor} = 1')
 
     else:
         fatorial = valor
-        intAux = valor
-        while intAux >=2:
-            intAux -= 1
-            fatorial *= intAux
+        contador = valor
 
-        print(f'{valor}! = {fatorial}')
+        while contador >= 2:
+            contador -= 1
+            fatorial *= contador
+
+        print(f' Fatorial do {valor} = {fatorial}')

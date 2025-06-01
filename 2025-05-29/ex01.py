@@ -3,21 +3,23 @@ dado que um numero primo é um numero que só possui dois divisores (1 e ele mes
 inteiro e informe se ele é primo ou não.
 '''
 
-import sys
-
-try:
-    num = int(input('digite um numero inteiro: '))
-    if num <= 0:
+num = int(input('digite um numero inteiro: '))
+if num <= 0:
         print('este numero nao é primo: ')
 
-except ValueError:
-    sys.exit('ERRO: não foi...')
-except Exception as e:
-   sys.exit(f'ERRO {e}')
+numeros = ()
+i = 1
+while i <= num:
+    numeros += (i,)
+    i += 1
 
-cont_divisor = 0
-divisor = 1
+divisor = 0
 
-for cd in cont_divisor:
-    num = (cd % num) == 0
-    c
+for n in numeros:
+    if num % n == 0:
+        divisor += 1
+
+if divisor == 2:
+    print(f'{num} é primo.')
+else:
+    print(f'{num} não é primo')
