@@ -19,4 +19,4 @@ else:
     if intmultiplicando <= 0:
         sys.exit('ERRO: informe multiplicando positivo...')
 
-intproduto = 0 
+intmultiplicando = 1
