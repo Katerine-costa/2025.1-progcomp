@@ -2,12 +2,14 @@
    Programa para verificar quantas vogais existem em uma string informada pelo usuário.
 '''
 
-strtexto = input('digite uma palavra: ')
+strTexto = input('Digite um texto: ').upper()
 
+strVogais = 'AEIOUÂÊÎÔÛÃÕÁÉÍÓÚÀÈÌÒÙÄËÏÖÜ'
 
-intvogais = 'AEIOUÂÊÎÔÛÃÕÁÉÍÓÚÀÈÌÒÙÄËÏÖÜ'
+intVogais = 0
 
-for strletra in strtexto:
-    if strletra == 'A' or strletra == 'E' or 
+for strLetra in strTexto:
+   if strLetra in strVogais:
+      intVogais += 1
 
-print(f'o texto possui {intvogais} vogais')
+print(f'O texto possui {intVogais} vogais')
