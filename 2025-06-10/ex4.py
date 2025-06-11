@@ -33,7 +33,7 @@ strTexto = 'Python é uma linguagem de programação de alto nível, interpretad
    'do mundo da programação, sendo ideal tanto para projetos simples quanto para sistemas de grande escala. Seu crescimento constante ' \
    'e sua capacidade de adaptação a novas demandas tecnológicas garantem que Python continuará sendo uma peça central no futuro da computação.'
 
-strpalavra = input('Digite a palavra ou letra que deseja conta: ')
+strpalavra = input('Digite a palavra ou letra que deseja conta: ').upper()
 
 contador = 0
 i = 0
@@ -42,9 +42,9 @@ palavra = len(strpalavra)
 texto = len(strTexto)
 
 
-while i <= texto - palavra:
-    if strTexto[i:i + palavra] == strpalavra:
-        contador += 1
-        i += 1
+for i in range(texto - palavra + 1):
+   Ptexto = strTexto[i:i + palavra]
+   if Ptexto.upper() == strpalavra:
+      contador += 1
 
 print(f'a palavra "{strpalavra}" aparece {contador} vezes no texto.')
