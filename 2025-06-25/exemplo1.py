@@ -15,20 +15,29 @@ try:
     intnum = int(input('informe o valor de num: '))
 
     if intnum < 0 or intnum > 100:
-        print('ERRO: Nota inválida. Informe entre 0 e +100...')
-    #elif intnum < 0:
-    #    print('ERRO: Nota inválida. Informe entre -100 e 0 ...')
+        print('ERRO: Nota inválida. Informe entre 0 e 100...')
 
 except ValueError:
     sys.exit('/nERRO: informe um valor inteiro válido.../n')
 except Exception as erro:
     sys.exit(f'/nERRO: {erro}.../n')
 else:
-#intnum = 0
-
+#  Gera uma lista com N valores inteiros aleatórios entre -100 e +100
     lista = list()
 
     for num in range(intnum):
         lista.append(random.randint(-100,100))
-    print(lista)
-     
+
+# Gera uma nova lista apenas com os números pares
+
+    lista_pares = []
+    for num in lista:
+        if num % 2 == 0:
+            lista_pares.append(num)
+
+# EXibe o resultado 
+
+print('/n Lista')
+print(lista)
+print('/n Numeros pares da lista. ')
+print(lista_pares)
