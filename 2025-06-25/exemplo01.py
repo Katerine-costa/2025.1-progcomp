@@ -21,23 +21,12 @@ except ValueError:
     sys.exit('/nERRO: informe um valor inteiro válido.../n')
 except Exception as erro:
     sys.exit(f'/nERRO: {erro}.../n')
-else:
-#  Gera uma lista com N valores inteiros aleatórios entre -100 e +100
-    lista = list()
 
-    for _ in range(intnum):
-        lista.append(random.randint(-100,100))
+intvalores = list()
 
-# Gera uma nova lista apenas com os números pares
+for _ in range(intnum):
+    invalor = random.randint(-100, +100)
 
-    lista_pares = []
-    for num in lista:
-        if num % 2 == 0:
-            lista_pares.append(num)
+    intvalores.append(invalor)
 
-# EXibe o resultado 
-
-print('/n Lista')
-print(lista)
-print('/n Numeros pares da lista. ')
-print(lista_pares)
+print('valores')
