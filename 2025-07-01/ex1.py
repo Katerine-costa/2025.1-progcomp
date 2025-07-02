@@ -22,26 +22,24 @@ else:
 
    # ----------------------------------------------------------------------
    # Item 02
-   '''lstValores = list()
-
+   '''
+   lstValores = list()
    for _ in range(intN):
       intValor = random.randint(-100, 100)
-      lstValores.append(intValor)'''
+      lstValores.append(intValor)
+   '''
+   lstValores = [ random.randint(-100, 100) for _ in range(intN) ]
 
-lstValores = [ random.randint(-100, 100) for _ in range(intN) ]
-
-print(lstValores)
+   print(lstValores)
 
    # ----------------------------------------------------------------------
    # Item 03
-
    '''
    lstPares = list()
-    for intValor in lstValores:
+   for intValor in lstValores:
       if intValor % 2 == 0:
          lstPares.append(intValor)
    '''
-
-lstPares = [ intValor for intValor in lstValores if intValor % 2 == 0 ]
-
-print(lstPares)
+   lstPares = [ intValor for intValor in lstValores if intValor % 2 == 0 ]
+   
+   print(lstPares)
